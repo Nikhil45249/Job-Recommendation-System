@@ -1,104 +1,47 @@
+
 @import "tailwindcss";
 
 @theme {
-  /* ========================================
-     BACKGROUNDS
-     ======================================== */
-
-  /* Outer page / shell background */
+  /* BACKGROUNDS */
   --color-bg-outer: #000000;
-
-  /* Main application background */
   --color-bg-main: #111214;
-
-  /* Dark areas such as Sidebar */
   --color-bg-dark: #1c1d1f;
-
-  /* Cards / content surfaces */
   --color-bg-card: #25272a;
-
-  /* Input fields */
   --color-bg-input: #202225;
 
-
-  /* ========================================
-     PRIMARY COLORS
-     ======================================== */
-
-  /* Main buttons, active states, highlights */
+  /* PRIMARY COLORS */
   --color-primary: #78a9d8;
-
-  /* Primary hover */
   --color-primary-hover: #91b9de;
-
-  /* Light blue */
   --color-primary-light: #c2d2e2;
 
-
-  /* ========================================
-     SECONDARY COLOR
-     ======================================== */
-
-  /* Subtle purple accent */
+  /* SECONDARY COLORS */
   --color-secondary: #8276c7;
-
-  /* Secondary hover */
   --color-secondary-hover: #968bd2;
 
-
-  /* ========================================
-     TEXT COLORS
-     ======================================== */
-
-  /* Main text */
+  /* TEXT COLORS */
   --color-text-primary: #f4f6f8;
-
-  /* Secondary text */
   --color-text-secondary: #b3bac2;
-
-  /* Muted text */
   --color-text-muted: #858b91;
-
-  /* Text used on dark backgrounds */
   --color-text-light: #f4f6f8;
 
-
-  /* ========================================
-     BORDERS
-     ======================================== */
-
-  /* Normal borders */
+  /* BORDERS */
   --color-border: #35383c;
-
-  /* Light borders */
   --color-border-light: #2b2e31;
-
-  /* Dark borders */
   --color-border-dark: #464a4f;
 
-
-  /* ========================================
-     STATUS COLORS
-     ======================================== */
-
-  /* Success */
+  /* STATUS COLORS */
   --color-success: #9fc49a;
-
-  /* Warning */
   --color-warning: #dfc879;
-
-  /* Error */
   --color-danger: #d99b9b;
-
-  /* Information */
   --color-info: #78a9d8;
 }
 
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+}
 
-/* ========================================
-   ROOT
-   ======================================== */
-
+/* ROOT */
 :root {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -110,44 +53,32 @@
   text-rendering: optimizeLegibility;
 }
 
-
-/* ========================================
-   GLOBAL RESET
-   ======================================== */
-
-* {
-  box-sizing: border-box;
-}
-
-
-/* ========================================
-   HTML
-   ======================================== */
-
+/* HTML */
 html {
-  scroll-behavior: smooth;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
 }
 
-
-/* ========================================
-   BODY
-   ======================================== */
-
+/* BODY */
 body {
-  margin: 0;
-
+  width: 100%;
   min-width: 320px;
+  height: 100%;
   min-height: 100vh;
+  margin: 0;
 
   background: var(--color-bg-outer);
   color: var(--color-text-primary);
 }
 
+/* REACT ROOT */
+#root {
+  width: 100%;
+  min-height: 100%;
+}
 
-/* ========================================
-   FORM ELEMENTS
-   ======================================== */
-
+/* FORM ELEMENTS */
 button,
 input,
 textarea,
@@ -155,21 +86,23 @@ select {
   font: inherit;
 }
 
-
-/* ========================================
-   LINKS
-   ======================================== */
-
+/* LINKS */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-
-/* ========================================
-   BUTTON
-   ======================================== */
-
+/* BUTTONS */
 button {
   cursor: pointer;
+}
+
+/* SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dashboard inner content uses its own scroll container. */
+body {
+  overflow: hidden;
 }

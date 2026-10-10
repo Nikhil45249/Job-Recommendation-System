@@ -2,6 +2,14 @@ import { Routes, Route } from "react-router-dom";
 
 import PublicNavbar from "./components/PublicNavbar";
 import DashboardLayout from "./layouts/DashboardLayout";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import CompleteProfile from "./pages/CompleteProfile";
+import Dashboard from "./pages/Dashboard";
+import Jobs from "./pages/Jobs";
+import JobDetails from "./pages/JobDetails";
+import Applications from "./pages/Applications";
+import SavedJobs from "./pages/SavedJobs";
 
 
 // ====================
@@ -22,96 +30,96 @@ function Home() {
   );
 }
 
-function Login() {
-  return (
-    <div className="min-h-screen bg-bg-main">
-      <h1 className="text-text-primary">Login</h1>
-    </div>
-  );
-}
+// function Login() {
+//   return (
+//     <div className="min-h-screen bg-bg-main">
+//       <h1 className="text-text-primary">Login</h1>
+//     </div>
+//   );
+// }
 
-function SignUp() {
-  return (
-    <div className="min-h-screen bg-bg-main">
-      <h1 className="text-text-primary">Sign Up</h1>
-    </div>
-  );
-}
+// function SignUp() {
+//   return (
+//     <div className="min-h-screen bg-bg-main">
+//       <h1 className="text-text-primary">Sign Up</h1>
+//     </div>
+//   );
+// }
 
-function CompleteProfile() {
-  return (
-    <div className="min-h-screen bg-bg-main">
-      <h1 className="text-text-primary">Complete Profile</h1>
-    </div>
-  );
-}
+// function CompleteProfile() {
+//   return (
+//     <div className="min-h-screen bg-bg-main">
+//       <h1 className="text-text-primary">Complete Profile</h1>
+//     </div>
+//   );
+// }
 
 
 // ====================
 // Dashboard Pages
 // ====================
 
-function Dashboard() {
-  return (
-    <DashboardLayout>
-      <div className="flex flex-1 flex-col rounded-xl border border-border bg-bg-card">
-        <div className="flex flex-1 items-center justify-center">
-          <h1 className="text-3xl font-bold text-text-primary">
-            Dashboard
-          </h1>
-        </div>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function Dashboard() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex flex-1 flex-col rounded-xl border border-border bg-bg-card">
+//         <div className="flex flex-1 items-center justify-center">
+//           <h1 className="text-3xl font-bold text-text-primary">
+//             Dashboard
+//           </h1>
+//         </div>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
-function Jobs() {
-  return (
-    <DashboardLayout>
-      <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
-        <h1 className="text-3xl font-bold text-text-primary">
-          All Jobs
-        </h1>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function Jobs() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
+//         <h1 className="text-3xl font-bold text-text-primary">
+//           All Jobs
+//         </h1>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
-function JobDetails() {
-  return (
-    <DashboardLayout>
-      <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
-        <h1 className="text-3xl font-bold text-text-primary">
-          Job Details
-        </h1>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function JobDetails() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
+//         <h1 className="text-3xl font-bold text-text-primary">
+//           Job Details
+//         </h1>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
-function Applications() {
-  return (
-    <DashboardLayout>
-      <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
-        <h1 className="text-3xl font-bold text-text-primary">
-          My Applications
-        </h1>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function Applications() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
+//         <h1 className="text-3xl font-bold text-text-primary">
+//           My Applications
+//         </h1>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
-function SavedJobs() {
-  return (
-    <DashboardLayout>
-      <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
-        <h1 className="text-3xl font-bold text-text-primary">
-          Saved Jobs
-        </h1>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function SavedJobs() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
+//         <h1 className="text-3xl font-bold text-text-primary">
+//           Saved Jobs
+//         </h1>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
 function Profile() {
   return (
