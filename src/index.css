@@ -103,6 +103,19 @@ html {
 }
 
 /* Dashboard inner content uses its own scroll container. */
+/* SCROLLING */
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* REACT ROOT */
+#root {
+  width: 100%;
+  min-height: 100vh;
 }

@@ -10,25 +10,28 @@ import Jobs from "./pages/Jobs";
 import JobDetails from "./pages/JobDetails";
 import Applications from "./pages/Applications";
 import SavedJobs from "./pages/SavedJobs";
+import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
+import Home from "./pages/Home";
 
 
 // ====================
 // Public Pages
 // ====================
 
-function Home() {
-  return (
-    <div className="min-h-screen bg-bg-main">
-      <PublicNavbar />
+// function Home() {
+//   return (
+//     <div className="min-h-screen bg-bg-main">
+//       <PublicNavbar />
 
-      <main className="flex min-h-[calc(100vh-72px)] items-center justify-center">
-        <h1 className="text-4xl font-bold text-text-primary">
-          Job Recommendation System
-        </h1>
-      </main>
-    </div>
-  );
-}
+//       <main className="flex min-h-[calc(100vh-72px)] items-center justify-center">
+//         <h1 className="text-4xl font-bold text-text-primary">
+//           Job Recommendation System
+//         </h1>
+//       </main>
+//     </div>
+//   );
+// }
 
 // function Login() {
 //   return (
@@ -121,17 +124,17 @@ function Home() {
 //   );
 // }
 
-function Profile() {
-  return (
-    <DashboardLayout>
-      <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
-        <h1 className="text-3xl font-bold text-text-primary">
-          My Profile
-        </h1>
-      </div>
-    </DashboardLayout>
-  );
-}
+// function Profile() {
+//   return (
+//     <DashboardLayout>
+//       <div className="flex min-h-full items-center justify-center rounded-xl border border-border bg-bg-card">
+//         <h1 className="text-3xl font-bold text-text-primary">
+//           My Profile
+//         </h1>
+//       </div>
+//     </DashboardLayout>
+//   );
+// }
 
 
 // ====================
@@ -182,6 +185,7 @@ const App = () => {
         path="/profile"
         element={<Profile />}
       />
+      <Route path="/settings" element={<Settings />} />
 
     </Routes>
   );
